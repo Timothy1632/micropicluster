@@ -1,0 +1,77 @@
+<html>
+<title>Micro Cluster</title>
+<header class="title">Micro Cluster</header>
+<head>
+<style>
+.title {
+    font-size: 64px;
+    font-family: monospace;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    border: 4px solid black;
+    padding: 6px;
+    background-color: lightgreen;
+}
+.menu {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 10px;
+    border: 3px solid black;
+    list-style: none;
+}
+li, a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    padding: 4px;
+}
+body {
+    background-color: lightgrey;
+}
+p {
+    font-size: 16px;
+    font-family: monospace;
+}
+.about {
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 5px; 
+    text-decoration: underline;
+}
+.specs {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border: 4px solid black;
+    width: 20%;
+}
+</style>
+<div class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+</div>
+</head>
+<body>
+<br><br>
+<br><br>'
+<br><br>
+<p class="about">About</p>
+<p>This page is to inform you of what this cluster is all about. So here we go...</p>
+<p>First of all the cluster that I will be explaining right now are 5 different OrangePiZero2W computer chips like a arduino that I put together with OrangePi(Debian) as the Operating System. I know Debian and its commands best with that structure. I will list down the specs at the bottom for the Pi hardware it comes with. Also, I am using a router that is just for itself and nothing else that way I have the maximum bandwidth for my wireless setup. I chose not to use the expantion board that comes with the enthernet plugin due to the size I wanted to have the setup overall. </p>
+<p>The setup for the cluster I am using is Kubernetes (K3S) from Rancher. This is a lite setup for small scale clusters. Reason why I chose this setup is that I can get familiar with Data Centers (AWS) and the cloud. These are ways to understand how the big scales work in juction to the small scale. So the way K3S works is theres a Manager Node and Worker Nodes. The Manager Node controls the feed and work amount to each of the Worker Nodes. The Worker Nodes do the computing and are the brains of the operation. The more you have, the better they can share the load for faster and better results.</p>
+
+<div class="specs">
+<li style="list-style:none;text-decoration:underline"><a href="http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2W.html" style="color:blue">OrangePiZero2W Specs:</a></li>
+<li>Quad-core Cortex-A53 processor</li>
+<li>1GB Ram</li>
+<li>Wi-Fi5+BT5.0</li>
+<li>USB 2.0</li>
+<li>16MB SPI Flash on board</li>
+</div>
+</body>
